@@ -94,7 +94,7 @@ $tempMainPage_PageName = array();
 $tempMainPage_Content = array();
 $tempMainPage_Photo = array();
 $tempMainPage_subCat = array();
-$tempMainPage_result = array();
+$tempMainPage_result = 0;
 
 $myjson = '{';
 $myjson .= '"Main":[';
@@ -123,7 +123,7 @@ $myjson .= '"Main":[';
         {
             //make an array of just the mainpages results 
             if($MainPage_UserID == $MainUser[$i]){
-                $temp
+                array_push($tempMainPage_ID, )
             }
         }
             if($MainPage_UserID == $MainUser[$i]){
