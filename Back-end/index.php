@@ -88,6 +88,14 @@ if($subPage_numResults > 0)
     }
 }
 
+$tempMainpage_UserID = array();
+$tempMainPage_ID = array();
+$tempMainPage_PageName = array();
+$tempMainPage_Content = array();
+$tempMainPage_Photo = array();
+$tempMainPage_subCat = array();
+$tempMainPage_result = array();
+
 $myjson = '{';
 $myjson .= '"Main":[';
     for($i = 0; $i < $main_numResults; $i++){
@@ -106,7 +114,31 @@ $myjson .= '"Main":[';
         $myjson .='"'.$MainTheme[$i].'",';
 
         $myjson .='"Main_Title":';
-        $myjson .='"'.$MainTitle[$i].'"';
+        $myjson .='"'.$MainTitle[$i].'",';
+
+        $myjson .='"MenuItems":{';
+        //get MainPages
+        $myjson .='"Pages":[';
+        for($j = 0 ; $j < $mainPage_numResults; $j)
+        {
+            //make an array of just the mainpages results 
+            if($MainPage_UserID == $MainUser[$i]){
+                $temp
+            }
+        }
+            if($MainPage_UserID == $MainUser[$i]){
+                $myjson .='{';
+                $myjson .='"Page_Name":';
+                $myjson .='"'.$MainPage_pageName.'",';
+                
+                $myjson .='"Content":';
+                $myjson .='"'.$MainPage_Content.'",';
+
+                $myjson .='"Photo":';
+                $myjson .='"'.$MainPage_Photo.'"';
+            }
+            $myjson .='}';
+        }
 
         $myjson .='}';
 
