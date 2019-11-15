@@ -97,13 +97,13 @@ $myjson .= '"Main":[';
         $myjson .=$MainID[$i].',';
 
         $myjson .='"Username":';
-        $myjson .='"'.$MainUser[$i].'"';
+        $myjson .='"'.$MainUser[$i].'",';
 
         $myjson .='"Password":';
-        $myjson .='"'.$MainPassword[$i].'"';
+        $myjson .='"'.$MainPassword[$i].'",';
 
         $myjson .='"Main_Theme":';
-        $myjson .='"'.$MainTheme[$i].'"';
+        $myjson .='"'.$MainTheme[$i].'",';
 
         $myjson .='"Main_Title":';
         $myjson .='"'.$MainTitle[$i].'"';
