@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 include 'dbconfig.php';
 ?>
-<h3>Users</h3>
+<h3>Main Pages</h3>
 
 <table>
 <tr>
@@ -16,7 +16,7 @@ include 'dbconfig.php';
 
 <?php
 
-$query = "select * from Main_Pages";
+$query = "select * from Main_Page";
 $result = $mysqli->query($query);
 
 $num_results = $result->num_rows;
@@ -32,6 +32,7 @@ if($num_results > 0){
         echo "<td>{$content}</td>";
         echo "<td>{$photo}</td>";
         echo "<td>{$sub_category}</td>";
+        echo "<td><a href='Mainpages/editMainPages.php?id={$id}'>Edit</a></td>";
         echo "</tr>";
     }
 }
