@@ -7,7 +7,7 @@ include 'dbconfig.php';
 <table>
 <tr>
 <th>id</th>
-<th>username_ID</th>
+<th>user_name_id</th>
 <th>page_name</th>
 <th>content</th>
 <th>photo</th>
@@ -16,7 +16,7 @@ include 'dbconfig.php';
 
 <?php
 
-$query = "select * from Main_Page";
+$query = "select * from Main_Pages";
 $result = $mysqli->query($query);
 
 $num_results = $result->num_rows;
@@ -32,7 +32,8 @@ if($num_results > 0){
         echo "<td>{$content}</td>";
         echo "<td>{$photo}</td>";
         echo "<td>{$sub_category}</td>";
-        echo "<td><a href='Mainpages/editMainPages.php?id={$id}'>Edit</a></td>";
+        echo "<td><a href='editMainPages.php?id={$id}'>Edit</a></td>";
+        echo "<td><a href='delete_mainPage.php?id={$id}'>Delete</a></td>";
         echo "</tr>";
     }
 }
@@ -44,3 +45,10 @@ $mysqli->close();
 ?>
 
 </table>
+
+</table>
+  <p>
+    <div>
+      <a href="create_mainPage.php">Add New Page</a>
+    </div>
+  </p>
