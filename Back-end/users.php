@@ -30,6 +30,7 @@ if($num_results > 0){
         echo "<td>{$password}</td>";
         echo "<td>{$main_theme}</td>";
         echo "<td>{$main_title}</td>";
+        echo "<td><a href='editlogin.php?id={$id}'>Edit</a></td>";
         echo "</tr>";
     }
 }

@@ -5,5 +5,5 @@
 <nav>
 <a href="mainPages.php">Edit Pages </a>
 <a href="subpages.php">Edit SubPages </a>
-<a href="">Settings </a>
+<a href="users.php">Settings </a>
 </nav>
