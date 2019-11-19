@@ -33,6 +33,7 @@ if($num_results > 0){
         echo "<td>{$photo}</td>";
         echo "<td>{$sub_category}</td>";
         echo "<td><a href='editMainPages.php?id={$id}'>Edit</a></td>";
+        echo "<td><a href='create_subPage.php?id={$id}'>Add a Sub Page</a></td>";
         echo "<td><a href='delete_mainPage.php?id={$id}'>Delete</a></td>";
         echo "</tr>";
     }

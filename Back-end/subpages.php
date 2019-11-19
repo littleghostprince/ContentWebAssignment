@@ -30,6 +30,8 @@ if($num_results > 0){
         echo "<td>{$page_name}</td>";
         echo "<td>{$content}</td>";
         echo "<td>{$photo}</td>";
+        echo "<td><a href='editSubPages.php?id={$id}'>Edit</a></td>";
+        echo "<td><a href='delete_subPage.php?id={$id}'>Delete</a></td>";
         echo "</tr>";
     }
 }
