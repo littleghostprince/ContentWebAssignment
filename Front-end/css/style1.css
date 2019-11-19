@@ -1,3 +1,8 @@
+/* Wrap around content in body for background color difference
+    <div Class = divBody>
+        EX: code
+    </div>
+*/
 .divBody{
     background-color: rgba(255, 255, 255, .875);
     max-width: 95%;
@@ -8,31 +13,28 @@
     padding: 5px;
     font-size: larger;
 }
-
+/* Wrap around text for web site
+<div Class = columns>
+        EX: <?php
+        echo: "A lot of text"
+        ?>
+        </div>
+*/
 .columns{
     column-count: 2;
     column-gap: 5%;
     column-rule-style: solid;
     column-rule-width: 1%;
     column-rule-color: #222222;
+    cursor: default;
 }
-
-body{
-    background-color: #222222;
-    margin: 0;
-}
-
-h1{
-    color: black;
-    column-span: all;
-}
-
-.navBar{
-    background-color: #222222;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
+/* Wrap around <a href="Ex">Ex</a> for web site
+<div Class = navBar>
+        EX: <?php
+        echo: "A lot of text"
+        ?>
+        </div>
+*/
 .navBar a {
     float: left;
     color: #222222;
@@ -45,12 +47,30 @@ h1{
     font-weight: bolder;
     border-radius: 10px;
 }
-
 .navBar a:hover {
     background-color: #999999;
     color: white;
 }
+.navBar{
+    background-color: #222222;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+
+
+
+
+body{
+    background-color: #222222;
+    margin: 0;
+}
+
+h1{
+    color: black;
+    column-span: all;
+    cursor: default;
+}
 img{
     width: 30%;
     height: 30%;
