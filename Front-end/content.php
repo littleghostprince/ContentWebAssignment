@@ -1,8 +1,9 @@
 <?php
 
 echo "<div class = divBody>";
-    $p = $_GET['page'];
     $id = $_GET['id'];
+    
+    $p = $_GET['page'];
 
     echo "<h1>$p</h1>";
 
