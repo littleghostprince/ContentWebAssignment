@@ -43,7 +43,7 @@ EX: <?php
 .navBar a {
     float: left;
     color: #222222;
-    background-color: #333333;
+    background-color: white;
     text-align: center;
     padding: 10px;
     margin: 5px;
