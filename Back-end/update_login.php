@@ -11,7 +11,7 @@ main_theme = '".$mysqli->real_escape_string($_POST['main_theme'])."'
 where id='".$mysqli->real_escape_string($_REQUEST['id'])."'";
 
 if($mysqli->query($query)){
-    header("Location: index.php"); /*redirect */
+    header("Location: home.php"); /*redirect */
     exit();
 }
 else{
