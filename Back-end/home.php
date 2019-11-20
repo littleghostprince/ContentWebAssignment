@@ -1,14 +1,14 @@
 
 <?php //login.php here. If the user is not loged in do not continue
 
-//session_start();
+session_start();
 
-//if(isset($_SESSION['id'])){
-    //
-//}
-//else{
-//    header('Location: /ContentWebAssignment/Back-end/index.php');
-//}
+if(isset($_SESSION['id'])){
+    
+}
+else{
+   header('Location: /ContentWebAssignment/Back-end/index.php');
+}
 ?>
 
 <link rel="stylesheet" type="text/css" href="../css/mainStyle.css"/>
@@ -20,7 +20,7 @@
 <nav>
     <a href="mainPages.php">Edit Pages </a><br/>
     <a href="subpages.php">Edit SubPages </a><br/>
-    <a href="">Settings </a><br/>
+    <a href="users.php">Settings </a><br/>
     <a href="logout.php">Log Out </a>
 </nav>
 </div>

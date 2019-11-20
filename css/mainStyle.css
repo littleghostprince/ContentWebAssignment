@@ -35,7 +35,7 @@ h3 {
     left: 50%;
     width:30em;
     height:350px;
-    margin-top: -19em;
+    margin-top: -10em;
     margin-left: -15em; 
     text-align: center;
     border:0px;
@@ -58,14 +58,17 @@ a:hover {
     text-shadow: 3px 3px white;
 }
 
-table, th, td {
+table, th, td , tr {
     border: 1px solid white;
+    background-color: rgba(85, 90, 104, 0.24);
 }
 
 th, td {
     font-family: 'Source Code Pro', monospace;
-    color: black;
-    font-size: 30px;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .login {
@@ -88,4 +91,7 @@ input {
     width: 300px;
     font-family: 'Source Code Pro', monospace;
     font-style: italic;
+}
+.smallerFont{
+    font-size: 20px; 
 }

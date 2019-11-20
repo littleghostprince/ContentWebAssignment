@@ -7,7 +7,7 @@ $username = "WebContent";
 $password = "web";
 $db_name = "content_data";
 
-//session_start();
+session_start();
 
 // if( ! empty $_POST){
 //     if(isset ($_POST['username']) && isset ($_POST['password'])){
@@ -49,8 +49,8 @@ if( !empty($_POST)){
         $result = $select->get_result();
         $user = $result->fetch_object();
         
-        if (password_verify ($_POST['password'], "password")) {
-            $_SESSION['id'] = $user->id;
+        if ($_POST['password'] == "password") {
+            $_SESSION['id'] = 1;
             header('Location: home.php');
         }
         else{

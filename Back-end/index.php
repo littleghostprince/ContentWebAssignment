@@ -1,9 +1,6 @@
 
 <link rel="stylesheet" type="text/css" href="../css/mainStyle.css"/>
-<?php
-//session_start();
 
-?>
 <div class="login">
     <h2>Login</h2>
     <form action="process.php" method="post">

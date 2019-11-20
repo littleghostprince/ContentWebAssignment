@@ -2,6 +2,8 @@
 header("Access-Control-Allow-Origin: *");
 include 'dbconfig.php';
 ?>
+<link rel="stylesheet" type="text/css" href="../css/mainStyle.css"/>
+
 <h3>Main Pages</h3>
 
 <table>
@@ -32,9 +34,9 @@ if($num_results > 0){
         echo "<td>{$content}</td>";
         echo "<td>{$photo}</td>";
         echo "<td>{$sub_category}</td>";
-        echo "<td><a href='editMainPages.php?id={$id}'>Edit</a></td>";
-        echo "<td><a href='create_subPage.php?id={$id}'>Add a Sub Page</a></td>";
-        echo "<td><a href='delete_mainPage.php?id={$id}'>Delete</a></td>";
+        echo "<td class='smallerFont'><a href='editMainPages.php?id={$id}'>Edit</a></td>";
+        echo "<td class='smallerFont'><a href='create_subPage.php?id={$id}'>Add a Sub Page</a></td>";
+        echo "<td class='smallerFont'><a href='delete_mainPage.php?id={$id}'>Delete</a></td>";
         echo "</tr>";
     }
 }

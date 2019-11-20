@@ -2,6 +2,8 @@
 header("Access-Control-Allow-Origin: *");
 include 'dbconfig.php';
 ?>
+<link rel="stylesheet" type="text/css" href="../css/mainStyle.css"/>
+
 <h3>Users</h3>
 
 <table>
