@@ -10,7 +10,7 @@ photo = '".$mysqli->real_escape_string($_POST['photo'])."'
 where id='".$mysqli->real_escape_string($_REQUEST['id'])."'";
 
 if($mysqli->query($query)){
-    header("Location: index.php"); /*redirect */
+    header("Location: home.php"); /*redirect */
     exit();
 }
 else{
