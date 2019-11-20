@@ -75,4 +75,5 @@ img{
     height: 30%;
     border-radius: 10px;
     margin: 10px;
+    border: 1px solid black;
 }
