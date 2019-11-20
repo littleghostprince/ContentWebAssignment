@@ -1,14 +1,14 @@
 
 <?php //login.php here. If the user is not loged in do not continue
 
-session_start();
+//session_start();
 
-if(isset($_SESSION['id'])){
+//if(isset($_SESSION['id'])){
     //
-}
-else{
-    header('Location: /index.php');
-}
+//}
+//else{
+//    header('Location: /ContentWebAssignment/Back-end/index.php');
+//}
 ?>
 
 <link rel="stylesheet" type="text/css" href="../css/mainStyle.css"/>
