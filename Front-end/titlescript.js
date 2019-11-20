@@ -5,7 +5,7 @@ const SetTitle = data=>{
     let result = "";
 
     for(var i = 0 ; i < Object.keys(data.login).length;i++){
-      result += `<h1>${data.login[i].main_title}</h1>`;
+      result += `<h2>${data.login[i].main_title}</h2>`;
     }
 
     T.innerHTML = result;

@@ -58,7 +58,7 @@ EX: <?php
 }
 /*Buttons*/
 .navBar2 a {
-    float: left;
+    float: right;
     color: #222222;
     background-color: white;
     text-align: center;
@@ -147,4 +147,12 @@ img{
     border-radius: 10px;
     margin: 10px;
     border: 1px solid black;
+}
+h2{
+    color: white;
+    column-span: all;
+    cursor: default;
+    text-align: center;
+    font-size: 200%;
+    margin: 5px;
 }

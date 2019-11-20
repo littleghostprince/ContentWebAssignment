@@ -2,7 +2,7 @@
 
 echo "<div class = divBody>";
     $id = $_GET['id'];
-    
+
     $p = $_GET['page'];
 
     echo "<h1>$p</h1>";
