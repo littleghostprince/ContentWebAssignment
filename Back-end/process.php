@@ -47,6 +47,7 @@ if( !empty($_POST)){
         $select->bind_param('s', $_POST['username']);
         $select->execute();
         $result = $select->get_result();
+        $row = $result->fetch_assoc();
         $user = $result->fetch_object();
         
         if ($_POST['password'] == "password") {
