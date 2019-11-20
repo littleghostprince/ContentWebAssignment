@@ -7,7 +7,7 @@ const makeStyleSheet = data=>{
             var link = document.createElement('link');
             link.id = 'theme';
             link.rel = 'stylesheet';
-            link.href = `css/style3.css`;
+            link.href = `css/${data.login[i].main_theme}.css`;
             document.head.appendChild(link);
         }
     }
