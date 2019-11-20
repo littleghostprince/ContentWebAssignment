@@ -148,3 +148,11 @@ img{
     margin: 10px;
     border: 1px solid #1F0322;
 }
+h2{
+    color: #FFF8F0;
+    column-span: all;
+    cursor: default;
+    text-align: center;
+    font-size: 200%;
+    margin: 5px;
+}
