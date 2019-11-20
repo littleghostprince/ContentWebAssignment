@@ -11,11 +11,18 @@ else{
 }
 ?>
 
-<h3>Welcome Back <?php echo $_POST["username"]?></h3>
-<nav>
-<a href="Mainpages/mainPages.php">Edit Pages </a>
-<a href="">Edit SubPages </a>
-<a href="">Settings </a>
-<a href="/logout.php">Logout </a>
+<link rel="stylesheet" type="text/css" href="Front-end/css/mainStyle.css">
 
+<div class=header>
+<h3>Welcome Back <?php echo $_POST["username"]?></h3>
+</div>
+<div class=navBar>
+<nav>
+    <a href="mainPages.php">Edit Pages </a><br/>
+    <a href="subpages.php">Edit SubPages </a><br/>
+    <a href="">Settings </a><br/>
+    <a href="logout.php">Log Out </a>
 </nav>
+</div>
+
+
