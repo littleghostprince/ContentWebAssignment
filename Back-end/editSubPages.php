@@ -1,0 +1,37 @@
+
+<?php 
+header("Access-Control-Allow-Origin: *");
+include 'dbconfig.php';
+
+$query = "select id,main_page_id,page_name,content,photo
+from Sub_Pages
+where id='".$mysqli->real_escape_string($_REQUEST['id'])."'
+limit 0,1";
+
+$result = $mysqli->query($query);
+
+$row = $result->fetch_assoc();
+
+$id = $row['id'];
+$page_name= $row['page_name'];
+$content = $row['content'];
+$photo = $row['photo'];
+?>
+
+<h3>Update Details</h3>
+
+<form action="update_subPage.php" method="post">
+<input type="hidden" name="id" value='<?php echo $id;  ?>'>
+
+<label for="page_name">Page Title: </label>
+<input type="text" name="page_name" value='<?php echo $page_name;?>'/>
+
+<label for="content">Content: </label>
+<input type="text" name="content" value='<?php echo $content;?>'/>
+
+<label for="photo">Photo Link: </label>
+<input type="text" name="photo" value='<?php echo $photo;?>'/>
+
+<input type="submit" value="Update Sub Page">
+
+</form>
