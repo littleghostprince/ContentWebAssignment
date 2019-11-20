@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="Front-end/css/mainStyle.css"/>
+<link rel="stylesheet" type="text/css" href="../css/mainStyle.css"/>
 
 <div class="login">
     <h2>Login</h2>

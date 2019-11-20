@@ -11,7 +11,7 @@ else{
 }
 ?>
 
-<link rel="stylesheet" type="text/css" href="Front-end/css/mainStyle.css">
+<link rel="stylesheet" type="text/css" href="../css/mainStyle.css"/>
 
 <div class=header>
 <h3>Welcome Back <?php echo $_POST["username"]?></h3>

@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 include 'dbconfig.php';
 ?>
-<link rel="stylesheet" type="text/css" href="Front-end/css/mainStyle.css">
+<link rel="stylesheet" type="text/css" href="../css/mainStyle.css"/>
 <h3>Sub Pages</h3>
 
 <table>
