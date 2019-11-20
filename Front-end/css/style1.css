@@ -1,10 +1,10 @@
 /* Wrap around content in body for background color difference
-    <div Class = divBody>
-        EX: code
-    </div>
+<div Class = divBody>
+EX: code
+</div>
 */
 .divBody{
-    background-color: rgba(255, 255, 255, .875);
+    background-color: rgba(255, 255, 255, .9);
     max-width: 95%;
     max-height: 95%;
     margin: auto;
@@ -15,8 +15,8 @@
 }
 /* Wrap around text for web site
 <div Class = columns>
-        EX: <?php
-        echo: "A lot of text"
+EX: <?php
+echo: "A lot of text"
         ?>
         </div>
 */
@@ -30,11 +30,11 @@
 }
 /* Wrap around <a href="Ex">Ex</a> for web site
 <div Class = navBar>
-        EX: <?php
+EX: <?php
         echo: "A lot of text"
         ?>
         </div>
-*/
+        */
 .navBar a {
     float: left;
     color: #222222;
@@ -48,14 +48,67 @@
     border-radius: 10px;
 }
 .navBar a:hover {
-    background-color: #999999;
-    color: white;
+    background-color: rgb(250, 250, 169);
 }
 .navBar{
     background-color: #222222;
     border-radius: 10px;
     overflow: hidden;
 }
+
+
+
+
+
+/*New Stuff*/
+.dropbtn {
+    background-color: white;
+    color: #222222;
+    padding: 15px;
+    font-size: 115%;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px;
+    border: 1px solid #222222;
+  }
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(250, 250, 169);
+}
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+/*Content Inside Drop Box*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    overflow: auto;
+    right: 0;
+    z-index: 1;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 115%;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.dropdown-content a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover {
+    background-color: rgb(250, 250, 169);
+}
+.show {
+    display: block;
+}
+/*/New Stuff*/
 
 
 
