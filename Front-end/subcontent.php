@@ -3,7 +3,7 @@ $p = $_GET['page'];
 
 $id = $_GET['id'];
 
-echo "<h2>$p</h2>";
+echo "<h1>$p</h1>";
 
 echo "<div id='idHidden' style='display:none'>$id</div>";
 

@@ -2,10 +2,11 @@ let content = document.getElementById('menu');
 
 const makeMenu = data=>{
 
-    let result = "";
+    let result = "<div class = navBar>";
     for(var i = 0 ; i < Object.keys(data.MainPages).length;i++){
-        result +=`<a href="index.php?page=${data.MainPages[i].page_name}&id=${data.MainPages[i].id}">${data.MainPages[i].page_name}</a><br />`;
+        result +=`<a href="index.php?page=${data.MainPages[i].page_name}&id=${data.MainPages[i].id}">${data.MainPages[i].page_name}</a>`;
     }
+    result += "</div>";
     content.innerHTML = result;
   
 }

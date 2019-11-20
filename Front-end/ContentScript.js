@@ -24,15 +24,16 @@ const makecontent = data=>{
   
 }
 const makesubmenu = data =>{
-    let subnav = "";
+    let subnav = "<div class = navBar2>";
 
     for(var i = 0 ; i < Object.keys(data.MainPages).length;i++){
 
         if(data.MainPages[i].main_page_id == num){ 
-          subnav+= `<a href="subindex.php?page=${data.MainPages[i].page_name}&id=${data.MainPages[i].id}" >${data.MainPages[i].page_name}</a><br />`;       
+          subnav+= `<a href="subindex.php?page=${data.MainPages[i].page_name}&id=${data.MainPages[i].id}" >${data.MainPages[i].page_name}</a>`;       
         }
        
     }
+    subnav += "</div>";
     sub.innerHTML = subnav;
 }
 
